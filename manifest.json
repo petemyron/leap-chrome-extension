@@ -1,0 +1,13 @@
+{
+    "name": "Leap Motion Controller",
+    "description": "Leap Motion Controller",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.com/", "*://*.t-mobile.com/*"],
+            "js": ["leap_concatenated.js"],
+            "css": ["leapstrap.css", "leapstrap-theme.css"]
+        }
+    ]
+}
